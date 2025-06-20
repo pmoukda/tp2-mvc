@@ -1,0 +1,70 @@
+/*Grille*/
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    & p{
+        max-width: 80ch;
+        color:#fff;
+    }
+    & .redirection, ul{
+        margin-top: 20px;
+    }
+    & .homebtn{
+        justify-self: center;
+    }
+    
+    & .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 20px;
+        margin-top: 40px;
+        
+        &.big{
+            flex-direction: column;
+            margin-top: 40px;   
+        }
+        
+        & .redirectionBtn{
+            margin-top: 40px; 
+        }
+    }
+    /* carte*/
+    & .card{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid rgb(83, 81, 81);
+        border-radius: 5px;
+        align-self: center;
+        box-shadow: 5px 5px 8px black;
+        background-color: grey;
+        padding-bottom: 20px;
+     
+        & img{
+            max-width: 45ch;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0; 
+        }
+        
+        & .resume-title{
+            color: black;
+        }
+        
+        & p, h2{
+            padding: 0 20px;
+        }
+        /* résumé de la reservation */
+        &.resume{
+            width: 100%;
+        }
+    }
+    
+    & .description{
+        margin-top: 20px;
+    }
+    
+}

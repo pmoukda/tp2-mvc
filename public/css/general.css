@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to bottom, #1d1d1e,#555960, #868d97);
+    color: #f0ffff;
+    font-size: 16px;
+}
+
+* + :is(h1, h2, hr){
+    margin-top: 20px;
+   
+    
+}
+
+hr{
+    margin-top: 20px;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+h2{
+    font-size: 24px;
+}
+
+p{
+    line-height: 1.525;
+}
+
+a{
+    color: #ec4e05;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    
+    &:hover{
+        color: inherit;
+    }
+} 
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin-left: 50px;   
+}
+main > *{
+    margin-top: 50px;
+}

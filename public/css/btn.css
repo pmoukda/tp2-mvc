@@ -1,0 +1,35 @@
+/* boutons*/
+.btn{
+    padding: 10px;
+    width: 80%; 
+    margin-top: 20px; 
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #090c9b;
+    color: azure;
+    
+    &:hover{
+        color:#030379;
+        background-color: azure;
+        border: 2px solid #030379;
+    }
+    &.form{
+        align-items: center; 
+        margin-top: 20px;
+        order: 1;
+        max-width: 20%; 
+    }
+    
+    &.small{
+        max-width: 22ch; 
+        text-align: center;
+        padding: 10px 17.8px;
+        
+        & a{
+            color: inherit;
+            align-self: right;
+        }
+        
+    }
+    
+}
